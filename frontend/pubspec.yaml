@@ -1,0 +1,54 @@
+name: docarchive
+description: Document archiving mobile app
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State Management
+  provider: ^6.1.2
+
+  # Réseau
+  http: ^1.4.0
+  dio: ^5.9.0
+
+  # Stockage local
+  shared_preferences: ^2.5.3
+  flutter_secure_storage: ^9.2.4
+  path_provider: ^2.1.5
+
+  # Sélection de fichiers
+  file_picker: ^10.2.0
+
+  # Caméra & OCR
+  image_picker: ^1.1.2
+  google_ml_kit: ^0.20.0
+
+  # Utilitaires
+  intl: ^0.20.2
+
+  # PDF
+  flutter_pdfview: ^1.4.1+1
+
+  # Partage
+  share_plus: ^11.0.0
+
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/

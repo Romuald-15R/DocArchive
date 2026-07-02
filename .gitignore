@@ -1,0 +1,194 @@
+# ============================================
+# DOCARCHIVE – Fichiers à ignorer
+# Projet Flutter + FastAPI + PostgreSQL
+# ============================================
+
+# ============================================
+# 1. SÉCURITÉ – Fichiers sensibles
+# ============================================
+.env
+*.env
+.env.local
+.env.production
+.env.development
+
+# Clés et certificats
+*.pem
+*.p12
+*.jks
+*.keystore
+*.key
+*.crt
+*.csr
+
+# ============================================
+# 2. FRONTEND (Flutter / Dart)
+# ============================================
+
+# Fichiers généraux
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# IntelliJ / Android Studio
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# VS Code
+.vscode/
+.vscode-test/
+*.code-workspace
+
+# Flutter/Dart/Pub
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+/coverage/
+
+# Symbolication
+app.*.symbols
+
+# Obfuscation
+app.*.map.json
+
+# Android Studio build artifacts
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# Android
+android/.gradle/
+android/local.properties
+android/.idea/
+android/captures/
+android/app/*.iml
+android/*.iml
+gradlew
+gradlew.bat
+gradle/wrapper/
+
+# iOS
+**/ios/Flutter/.last_build_id
+**/ios/Flutter/.engine
+**/ios/Flutter/Flutter.podspec
+**/ios/Flutter/App.framework
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/flutter_export_environment.sh
+**/ios/Podfile.lock
+**/ios/Pods/
+**/ios/.symlinks/
+
+# macOS
+**/macos/Flutter/GeneratedPluginRegistrant.swift
+**/macos/Flutter/ephemeral/
+**/macos/Pods/
+**/macos/Podfile.lock
+**/macos/.symlinks/
+
+# Web
+**/web/index.html
+**/web/favicon.png
+**/web/manifest.json
+**/web/icons/
+
+# Windows
+**/windows/Flutter/GeneratedPluginRegistrant.cpp
+**/windows/Flutter/ephemeral/
+**/windows/runner/Debug/
+**/windows/runner/Release/
+**/windows/runner/x64/
+
+# Linux
+**/linux/Flutter/GeneratedPluginRegistrant.cc
+**/linux/Flutter/ephemeral/
+
+# ============================================
+# 3. BACKEND (FastAPI / Python)
+# ============================================
+
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.so
+*.dll
+*.dylib
+
+# Environnements virtuels
+venv/
+.venv/
+env/
+ENV/
+
+# Base de données
+*.db
+*.sqlite
+*.sqlite3
+
+# Uploads (documents stockés)
+/uploads/
+/media/
+/static/
+**/uploads/
+!uploads/.gitkeep
+
+# Logs
+*.log
+logs/
+**/logs/
+
+# Fichiers de migration (Alembic)
+migrations/versions/*.py
+!migrations/versions/__init__.py
+
+# ============================================
+# 4. AUTRES
+# ============================================
+
+# Fichiers temporaires
+*.tmp
+*.temp
+*.cache
+*.pid
+*.pid.lock
+*.seed
+
+# Fichiers de backup
+*.bak
+*.backup
+*.old
+
+# Fichiers de déploiement
+*.zip
+*.tar.gz
+*.tgz
+*.7z
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+
+# ============================================
+# 5. FICHIERS À GARDER (ne pas ignorer)
+# ============================================
+!.env.example
+!.gitkeep
+!uploads/.gitkeep
+!**/uploads/.gitkeep
